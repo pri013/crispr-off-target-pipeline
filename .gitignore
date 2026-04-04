@@ -1,0 +1,10 @@
+data/raw/*.fastq.gz
+data/raw/*.fastq
+data/reference/*.fa
+data/reference/*.fasta
+results/aligned/*.bam
+results/aligned/*.bai
+*.pyc
+__pycache__/
+.snakemake/
+.ipynb_checkpoints/
