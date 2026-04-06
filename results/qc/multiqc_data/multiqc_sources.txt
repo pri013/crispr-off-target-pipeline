@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	base_editor	/home/priya_d13/crispr-off-target-pipeline/results/qc/base_editor_fastqc.zip
+FastQC	all_sections	nhej.r1	/home/priya_d13/crispr-off-target-pipeline/results/qc/nhej.r1_fastqc.zip
+FastQC	all_sections	nhej.r2	/home/priya_d13/crispr-off-target-pipeline/results/qc/nhej.r2_fastqc.zip
+FastQC	all_sections	allele_specific	/home/priya_d13/crispr-off-target-pipeline/results/qc/allele_specific_fastqc.zip

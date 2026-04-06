@@ -146,12 +146,12 @@
   						</div>
   					  <div class="tab-pane fade text-start" id="log_params" role="tabpanel">
                 <p>CRISPResso version: 2.2.9</p>
-                <p>Run completed: 2026-04-06 15:13:08</p>
+                <p>Run completed: 2026-04-06 18:46:06</p>
                 <p>Amplicon sequence: <pre class='pre-scrollable'>CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCACTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG,CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCCCTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG</pre></p>
                 
                   <p>Guide sequence: <pre class='pre-scrollable'>GTGCGGAGCCACTTCGAGCAGC</pre></p>
                 
-                <p>Command used: <pre class='pre-scrollable'>/home/priya_d13/miniconda3/envs/crispr-offTarget/bin/CRISPResso --fastq_r1 ../../data/raw/allele_specific.fastq.gz --amplicon_seq CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCACTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG,CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCCCTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG --amplicon_name P23H,WT --guide_seq GTGCGGAGCCACTTCGAGCAGC -n allele_specific -o .</pre></p>
+                <p>Command used: <pre class='pre-scrollable'>/home/priya_d13/miniconda3/envs/crispr-offTarget/bin/CRISPResso --fastq_r1 data/raw/allele_specific.fastq.gz --amplicon_seq CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCACTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG,CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCCCTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG --amplicon_name P23H,WT --guide_seq GTGCGGAGCCACTTCGAGCAGC -n allele_specific -o results/crispresso/</pre></p>
                 <p>Parameters: <pre class='pre-scrollable'>allele_plot_pcts_only_for_assigned_reference: False
 aln_seed_count: 5
 aln_seed_len: 10
@@ -183,7 +183,7 @@ expand_allele_plots_by_quantification: False
 expand_ambiguous_alignments: False
 expected_hdr_amplicon_seq: 
 fastq_output: False
-fastq_r1: ../../data/raw/allele_specific.fastq.gz
+fastq_r1: data/raw/allele_specific.fastq.gz
 fastq_r2: 
 file_prefix: 
 flash_command: flash
@@ -211,7 +211,7 @@ needleman_wunsch_gap_extend: -2
 needleman_wunsch_gap_incentive: 1
 needleman_wunsch_gap_open: -20
 no_rerun: False
-output_folder: .
+output_folder: results/crispresso/
 place_report_in_output_folder: False
 plot_histogram_outliers: False
 plot_window_size: 20

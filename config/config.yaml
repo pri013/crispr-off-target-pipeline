@@ -1,0 +1,30 @@
+# ============================================================
+# CRISPR Editing Analysis Pipeline — Configuration
+# ============================================================
+
+# --- NHEJ Experiment (Cas9 nuclease, paired-end) ---
+nhej:
+  r1: "data/raw/nhej.r1.fastq.gz"
+  r2: "data/raw/nhej.r2.fastq.gz"
+  amplicon_seq: "AATGTCCCCCAATGGGAAGTTCATCTGGCACTGCCCACAGGTGAGGAGGTCATGATCCCCTTCTGGAGCTCCCAACGGGCCGTGGTCTGGTTCATCATCTGTAAGAATGGCTTCAAGAGGCTCGGCTGTGGTT"
+  name: "nhej"
+  extra_args: ""
+
+# --- Base Editor Experiment (EMX1, single-end) ---
+base_editor:
+  r1: "data/raw/base_editor.fastq.gz"
+  r2: ""
+  amplicon_seq: "GGCCCCAGTGGCTGCTCTGGGGGCCTCCTGAGTTTCTCATCTGTGCCCCTCCCTCCCTGGCCCAGGTGAAGGTGTGGTTCCAGAACCGGAGGACAAAGTACAAACGGCAGAAGCTGGAGGAGGAAGGGCCTGAGTCCGAGCAGAAGAAGAAGGGCTCCCATCACATCAACCGGTGGCGCATTGCCACGAAGCAGGCCAATGGGGAGGACATCGATGTCACCTCCAATGACTAGGGTGG"
+  guide_seq: "GAGTCCGAGCAGAAGAAGAA"
+  name: "base_editor"
+  extra_args: "--quantification_window_size 10 --quantification_window_center -10 --base_editor_output"
+
+# --- Allele-Specific Experiment (Rho gene, single-end) ---
+allele_specific:
+  r1: "data/raw/allele_specific.fastq.gz"
+  r2: ""
+  amplicon_seq: "CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCACTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG,CGAGAGCCGCAGCCATGAACGGCACAGAGGGCCCCAATTTTTATGTGCCCTTCTCCAACGTCACAGGCGTGGTGCGGAGCCCCTTCGAGCAGCCGCAGTACTACCTGGCGGAACCATGGCAGTTCTCCATGCTGGCAGCGTACATGTTCCTGCTCATCGTGCTGGG"
+  amplicon_name: "P23H,WT"
+  guide_seq: "GTGCGGAGCCACTTCGAGCAGC"
+  name: "allele_specific"
+  extra_args: "--amplicon_name P23H,WT"

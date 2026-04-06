@@ -1,0 +1,5 @@
+Sample	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-avg_sequence_length	FastQC_mqc-generalstats-fastqc-median_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-total_sequences
+allele_specific	98.02	60.0	167.1778	167	45.45454545454545	25000.0
+base_editor	96.14	59.0	249.97044	250	27.27272727272727	25000.0
+nhej.r1	98.244	54.0	127.59792	132	36.36363636363637	25000.0
+nhej.r2	95.928	54.0	127.41836	132	45.45454545454545	25000.0
