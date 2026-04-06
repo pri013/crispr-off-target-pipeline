@@ -1,0 +1,69 @@
+CRISPResso version 2.2.9
+[Command used]:
+/home/priya_d13/miniconda3/envs/crispr-offTarget/bin/CRISPResso --fastq_r1 ../../data/raw/nhej.r1.fastq.gz --fastq_r2 ../../data/raw/nhej.r2.fastq.gz --amplicon_seq AATGTCCCCCAATGGGAAGTTCATCTGGCACTGCCCACAGGTGAGGAGGTCATGATCCCCTTCTGGAGCTCCCAACGGGCCGTGGTCTGGTTCATCATCTGTAAGAATGGCTTCAAGAGGCTCGGCTGTGGTT -n nhej -o .
+
+[Execution log]:
+Estimating average read length...
+Merging paired sequences with Flash...
+Running FLASH command: flash "../../data/raw/nhej.r1.fastq.gz" "../../data/raw/nhej.r2.fastq.gz" --min-overlap 10 --max-overlap 100 --allow-outies -z -d /home/priya_d13/crispr-off-target-pipeline/results/crispresso/CRISPResso_on_nhej -o out >>/home/priya_d13/crispr-off-target-pipeline/results/crispresso/CRISPResso_on_nhej/CRISPResso_RUNNING_LOG.txt 2>&1
+[FLASH] Starting FLASH v1.2.11
+[FLASH] Fast Length Adjustment of SHort reads
+[FLASH]  
+[FLASH] Input files:
+[FLASH]     ../../data/raw/nhej.r1.fastq.gz
+[FLASH]     ../../data/raw/nhej.r2.fastq.gz
+[FLASH]  
+[FLASH] Output files:
+[FLASH]     /home/priya_d13/crispr-off-target-pipeline/results/crispresso/CRISPResso_on_nhej/out.extendedFrags.fastq.gz
+[FLASH]     /home/priya_d13/crispr-off-target-pipeline/results/crispresso/CRISPResso_on_nhej/out.notCombined_1.fastq.gz
+[FLASH]     /home/priya_d13/crispr-off-target-pipeline/results/crispresso/CRISPResso_on_nhej/out.notCombined_2.fastq.gz
+[FLASH]     /home/priya_d13/crispr-off-target-pipeline/results/crispresso/CRISPResso_on_nhej/out.hist
+[FLASH]     /home/priya_d13/crispr-off-target-pipeline/results/crispresso/CRISPResso_on_nhej/out.histogram
+[FLASH]  
+[FLASH] Parameters:
+[FLASH]     Min overlap:           10
+[FLASH]     Max overlap:           100
+[FLASH]     Max mismatch density:  0.250000
+[FLASH]     Allow "outie" pairs:   true
+[FLASH]     Cap mismatch quals:    false
+[FLASH]     Combiner threads:      8
+[FLASH]     Input format:          FASTQ, phred_offset=33
+[FLASH]     Output format:         FASTQ, phred_offset=33, gzip
+[FLASH]  
+[FLASH] Starting reader and writer threads
+[FLASH] Starting 8 combiner threads
+[FLASH] Processed 25000 read pairs
+[FLASH]  
+[FLASH] Read combination statistics:
+[FLASH]     Total pairs:      25000
+[FLASH]     Combined pairs:   24719
+[FLASH]         Innie pairs:   23655 (95.70% of combined)
+[FLASH]         Outie pairs:   1064 (4.30% of combined)
+[FLASH]     Uncombined pairs: 281
+[FLASH]     Percent combined: 98.88%
+[FLASH]  
+[FLASH] Writing histogram files.
+[FLASH] WARNING: An unexpectedly high proportion of combined pairs (96.79%)
+overlapped by more than 100 bp, the --max-overlap (-M) parameter.  Consider
+increasing this parameter.  (As-is, FLASH is penalizing overlaps longer than
+100 bp when considering them for possible combining!)
+[FLASH]  
+[FLASH] FLASH v1.2.11 complete!
+[FLASH] 0.209 seconds elapsed
+[FLASH] Finished with 1 warning (see above)
+Done!
+Aligning sequences...
+Processing reads; N_TOT_READS: 0 N_COMPUTED_ALN: 0 N_CACHED_ALN: 0 N_COMPUTED_NOTALN: 0 N_CACHED_NOTALN: 0
+Processing reads; N_TOT_READS: 10000 N_COMPUTED_ALN: 1801 N_CACHED_ALN: 8108 N_COMPUTED_NOTALN: 63 N_CACHED_NOTALN: 28
+Processing reads; N_TOT_READS: 20000 N_COMPUTED_ALN: 2955 N_CACHED_ALN: 16848 N_COMPUTED_NOTALN: 111 N_CACHED_NOTALN: 86
+Finished reads; N_TOT_READS: 24719 N_COMPUTED_ALN: 3393 N_CACHED_ALN: 21085 N_COMPUTED_NOTALN: 133 N_CACHED_NOTALN: 108
+Done!
+Quantifying indels/substitutions...
+Done!
+Calculating allele frequencies...
+Done!
+Saving processed data...
+Making Plots...
+Done!
+Removing Intermediate files...
+Analysis Complete!

@@ -46,6 +46,7 @@ dependencies:
   - dav1d=1.2.1=hd590300_0
   - docutils=0.22.4=pyhd8ed1ab_0
   - dpath=2.2.0=pyha770c72_1
+  - entrez-direct=24.0=he881be0_0
   - expat=2.7.5=h7354ed3_0
   - fastqc=0.12.1=hdfd78af_0
   - flash=1.2.11=h5bf99c6_6
@@ -55,6 +56,8 @@ dependencies:
   - freetype=2.14.1=hf5b9546_0
   - fribidi=1.0.16=hb03c661_0
   - future=1.0.0=pyhd8ed1ab_2
+  - gettext=0.25.1=h92eb808_0
+  - gettext-tools=0.25.1=h6a67909_0
   - giflib=5.2.2=hd590300_0
   - gitdb=4.0.12=pyhd8ed1ab_0
   - gitpython=3.1.46=pyhd8ed1ab_0
@@ -79,6 +82,8 @@ dependencies:
   - lcms2=2.17=heab6991_0
   - ld_impl_linux-64=2.44=h9e0c5a2_3
   - lerc=4.1.0=hdb68285_0
+  - libasprintf=0.25.1=hf2ab22a_0
+  - libasprintf-devel=0.25.1=hf2ab22a_0
   - libavif=1.4.1=hcfa2d63_0
   - libavif16=1.4.1=hcfa2d63_0
   - libblas=3.11.0=6_h4a7cf45_openblas
@@ -94,12 +99,15 @@ dependencies:
   - libffi=3.4.4=h6a678d5_1
   - libgcc=15.2.0=h69a1729_7
   - libgcc-ng=15.2.0=h166f726_7
+  - libgettextpo=0.25.1=hf2ab22a_0
+  - libgettextpo-devel=0.25.1=hf2ab22a_0
   - libgfortran=15.2.0=h69a702a_18
   - libgfortran-ng=15.2.0=h69a702a_18
   - libgfortran5=15.2.0=h68bc16d_18
   - libglib=2.86.3=h8b17d9a_0
   - libgomp=15.2.0=h4751f2c_7
   - libiconv=1.18=h3b78370_2
+  - libidn2=2.3.8=hf80d704_0
   - liblapack=3.11.0=6_h47877c9_openblas
   - liblapacke=3.11.0=6_h6ae95b6_openblas
   - libnghttp2=1.58.0=h47da74e_1
@@ -112,6 +120,7 @@ dependencies:
   - libstdcxx=15.2.0=h39759b7_7
   - libstdcxx-ng=15.2.0=hc03a8fd_7
   - libtiff=4.7.1=h029b1ac_0
+  - libunistring=1.3=hb25bd0a_0
   - libuuid=1.41.5=h5eee18b_0
   - libwebp-base=1.6.0=hd42ef1d_0
   - libxcb=1.17.0=h9b100fa_0
@@ -121,7 +130,6 @@ dependencies:
   - markdown=3.10.2=pyhcf101f3_0
   - markdown-it-py=4.0.0=pyhd8ed1ab_0
   - markupsafe=3.0.3=pyh7db6752_1
-  - matplotlib-base=3.10.8=py310h8a257da_0
   - mdurl=0.1.2=pyhd8ed1ab_1
   - multiqc=1.14=pyhdfd78af_0
   - munkres=1.0.7=py_1
@@ -200,6 +208,7 @@ dependencies:
   - tzdata=2026a=he532380_0
   - unicodedata2=16.0.0=py310hee96239_0
   - urllib3=2.5.0=pyhd8ed1ab_0
+  - wget=1.25.0=he4200e1_2
   - wheel=0.46.3=py310h06a4308_0
   - wrapt=2.1.2=py310h7c4b9e2_0
   - xorg-libx11=1.8.12=h9b100fa_1
@@ -256,6 +265,7 @@ dependencies:
       - jupyterlab-server==2.28.0
       - jupyterlab-widgets==3.0.16
       - lark==1.3.1
+      - matplotlib==3.7.3
       - matplotlib-inline==0.2.1
       - mistune==3.2.0
       - nbclient==0.10.4
@@ -263,7 +273,7 @@ dependencies:
       - nest-asyncio==1.6.0
       - notebook==7.5.5
       - notebook-shim==0.2.4
-      - numpy==1.24.4
+      - numpy==1.23.5
       - overrides==7.7.0
       - pandocfilters==1.5.1
       - parso==0.8.6
