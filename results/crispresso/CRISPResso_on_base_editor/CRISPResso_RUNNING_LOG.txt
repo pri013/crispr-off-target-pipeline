@@ -1,0 +1,20 @@
+CRISPResso version 2.2.9
+[Command used]:
+/home/priya_d13/miniconda3/envs/crispr-offTarget/bin/CRISPResso --fastq_r1 ../../data/raw/base_editor.fastq.gz --amplicon_seq GGCCCCAGTGGCTGCTCTGGGGGCCTCCTGAGTTTCTCATCTGTGCCCCTCCCTCCCTGGCCCAGGTGAAGGTGTGGTTCCAGAACCGGAGGACAAAGTACAAACGGCAGAAGCTGGAGGAGGAAGGGCCTGAGTCCGAGCAGAAGAAGAAGGGCTCCCATCACATCAACCGGTGGCGCATTGCCACGAAGCAGGCCAATGGGGAGGACATCGATGTCACCTCCAATGACTAGGGTGG --guide_seq GAGTCCGAGCAGAAGAAGAA --quantification_window_size 10 --quantification_window_center -10 --base_editor_output -n base_editor -o .
+
+[Execution log]:
+Aligning sequences...
+Processing reads; N_TOT_READS: 0 N_COMPUTED_ALN: 0 N_CACHED_ALN: 0 N_COMPUTED_NOTALN: 0 N_CACHED_NOTALN: 0
+Processing reads; N_TOT_READS: 10000 N_COMPUTED_ALN: 1984 N_CACHED_ALN: 8000 N_COMPUTED_NOTALN: 16 N_CACHED_NOTALN: 0
+Processing reads; N_TOT_READS: 20000 N_COMPUTED_ALN: 3267 N_CACHED_ALN: 16706 N_COMPUTED_NOTALN: 27 N_CACHED_NOTALN: 0
+Finished reads; N_TOT_READS: 25000 N_COMPUTED_ALN: 3909 N_CACHED_ALN: 21061 N_COMPUTED_NOTALN: 30 N_CACHED_NOTALN: 0
+Done!
+Quantifying indels/substitutions...
+Done!
+Calculating allele frequencies...
+Done!
+Saving processed data...
+Making Plots...
+Done!
+Removing Intermediate files...
+Analysis Complete!
