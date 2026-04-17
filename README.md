@@ -253,8 +253,8 @@ This pipeline demonstrates analytical capabilities directly applicable to evalua
 
 ## 👤 Author
 
-**Priya D** — Graduate Student, Computational Biology / Bioinformatics
+**Priya D** — Graduate Student, Bioinformatics
 
 ---
 
-<p align="center"><i>This project was developed as a portfolio piece demonstrating bioinformatics pipeline development skills for CRISPR gene editing analysis.</i></p>
+
