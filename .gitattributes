@@ -1,1 +1,3 @@
 results/** linguist-vendored
+*.html linguist-vendored
+*.htm linguist-vendored
